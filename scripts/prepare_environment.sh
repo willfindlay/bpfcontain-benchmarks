@@ -64,6 +64,12 @@ undo_changes() {
     # Enable turbo boost
     echo 0 > /sys/devices/system/cpu/intel_pstate/no_turbo
 
+    # Enable SMT hyperthreading
+    for f in /sys/devices/system/cpu/cpu*/online
+    do
+        echo 1 > "$f"
+    done
+
     # Set scaling governor to powersave
     for i in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
     do
@@ -72,13 +78,6 @@ undo_changes() {
 
     # Enable ASLR
     echo 2 > /proc/sys/kernel/randomize_va_space
-
-    # Enable SMT hyperthreading
-    for f in /sys/devices/system/cpu/cpu*/topology/thread_siblings_list
-    do
-        smt=$(cat "$f" | awk -F '[-,]' '{ print $2 }')
-        echo 1 > "/sys/devices/system/cpu/cpu$smt/online"
-    done
 }
 
 main $@
