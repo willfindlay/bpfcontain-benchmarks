@@ -32,6 +32,10 @@ run_pts_tests() {
     pts result-file-to-json "$results" > "$data_dir/$json"
 }
 
+benchmark_base() {
+    run_pts_tests "$1" "base" "Base performance without any security mechanisms" ""
+}
+
 benchmark_bpfcontain() {
     # Start the daemon
     sudo bpfcontain daemon start
@@ -60,6 +64,9 @@ usage() {
 }
 
 case $1 in
+    base)
+        benchmark_base results
+        ;;
     bpfcontain)
         benchmark_bpfcontain results
         ;;
