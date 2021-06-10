@@ -43,6 +43,8 @@ benchmark_bpfcontain() {
 }
 
 benchmark_apparmor() {
+    # Disable rate limiting
+    sudo sudo sysctl -w kernel.printk_ratelimit=0
     # Load profiles
     sudo apparmor_parser -r apparmor_profiles/allow
     sudo apparmor_parser -r -C apparmor_profiles/complain
