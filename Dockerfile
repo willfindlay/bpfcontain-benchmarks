@@ -22,3 +22,4 @@ USER root
 
 # Copy over files
 COPY . /benches
+COPY ./config/pts/phoronix-test-suite.xml /etc/phoronix-test-suite.xml

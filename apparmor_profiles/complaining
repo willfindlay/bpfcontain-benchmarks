@@ -1,0 +1,3 @@
+# This profile will just deny everything. We need to set it to complain with `aa-complain /path/to/executable`
+
+# Deny all rules

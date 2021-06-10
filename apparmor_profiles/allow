@@ -1,0 +1,12 @@
+# Allow all rules
+capability,
+network,
+mount,
+remount,
+umount,
+pivot_root,
+ptrace,
+signal,
+dbus,
+unix,
+file,
