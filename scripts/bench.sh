@@ -17,7 +17,7 @@ run_pts_tests() {
 
     # No prompts at beginning
     export PTS_SILENT_MODE=1
-    # Run at least 11 times
+    # Run at least 10 times
     export FORCE_MIN_TIMES_TO_RUN=10
     # Always discard first run
     export IGNORE_RUNS=1
@@ -48,7 +48,7 @@ benchmark_bpfcontain() {
 
 benchmark_apparmor() {
     # Disable rate limiting
-    sudo sudo sysctl -w kernel.printk_ratelimit=0
+    sudo sysctl -w kernel.printk_ratelimit=0
     # Load profiles
     sudo apparmor_parser -r apparmor_profiles/allow
     sudo apparmor_parser -r -C apparmor_profiles/complain
