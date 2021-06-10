@@ -7,7 +7,7 @@
 # $3: Description for test run
 #
 run_pts_tests() {
-    local tests="osbench"
+    local tests="osbench apache build-linux-kernel"
     local results="$1"
     local json="$results.json"
     local id="$2"
@@ -33,15 +33,38 @@ run_pts_tests() {
 }
 
 benchmark_bpfcontain() {
-    bpfcontain daemon start
-    run_pts_tests "benches" "bpfcontain-passive" "BPFContain running without doing anything" ""
-    run_pts_tests "benches" "bpfcontain-allow" "BPFContain running in allow mode" "bpfcontain run bpfcontain_profiles/complaining.yml"
-    run_pts_tests "benches" "bpfcontain-complaining" "BPFContain running in complaining mode" "bpfcontain run bpfcontain_profiles/complaining.yml"
-    bpfcontain daemon stop
+    # Start the daemon
+    sudo bpfcontain daemon start
+    run_pts_tests "$1" "bpfcontain-passive" "BPFContain running without doing anything" ""
+    run_pts_tests "$1" "bpfcontain-allow" "BPFContain running in allow mode" "bpfcontain run bpfcontain_profiles/complain.yml --"
+    run_pts_tests "$1" "bpfcontain-complaining" "BPFContain running in complaining mode" "bpfcontain run bpfcontain_profiles/complain.yml --"
+    # Stop the daemon
+    sudo bpfcontain daemon stop
 }
 
 benchmark_apparmor() {
-    run_pts_tests "benches" "apparmor-passive" "AppArmor running without doing anything" ""
-    run_pts_tests "benches" "apparmor-allow" "AppArmor running in allow mode" "" # TODO: run an apparmor profile
-    run_pts_tests "benches" "apparmor-complaining" "AppArmor running in complaining mode" "" # TODO: run an apparmor profile
+    # Load profiles
+    sudo apparmor_parser -r apparmor_profiles/allow
+    sudo apparmor_parser -r -C apparmor_profiles/complain
+    run_pts_tests "$1" "apparmor-passive" "AppArmor running without doing anything" ""
+    run_pts_tests "$1" "apparmor-allow" "AppArmor running in allow mode" "aa-exec -p ALLOW"
+    run_pts_tests "$1" "apparmor-complaining" "AppArmor running in complaining mode" "aa-exec -p COMPLAIN"
+    sudo aa-teardown
 }
+
+usage() {
+    echo "USAGE: $1 [bpfcontain, apparmor]"
+    exit -1
+}
+
+case $1 in
+    bpfcontain)
+        benchmark_bpfcontain results
+        ;;
+    apparmor)
+        benchmark_apparmor results
+        ;;
+    *)
+        usage
+        ;;
+esac
