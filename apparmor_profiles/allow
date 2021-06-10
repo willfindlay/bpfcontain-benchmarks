@@ -1,4 +1,4 @@
-profile ALLOW /bin/pts {
+profile ALLOW {
     # Allow all rules
     capability,
     network,
