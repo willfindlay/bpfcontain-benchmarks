@@ -1,3 +1,16 @@
 # This profile will just deny everything. We need to set it to complain with `aa-complain /path/to/executable`
 
 # Deny all rules
+profile DENY /bin/pts {
+    deny capability,
+    deny network,
+    deny mount,
+    deny remount,
+    deny umount,
+    deny pivot_root,
+    deny ptrace,
+    deny signal,
+    deny dbus,
+    deny unix,
+    deny file,
+}

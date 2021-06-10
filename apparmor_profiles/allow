@@ -1,12 +1,14 @@
-# Allow all rules
-capability,
-network,
-mount,
-remount,
-umount,
-pivot_root,
-ptrace,
-signal,
-dbus,
-unix,
-file,
+profile ALLOW /bin/pts {
+    # Allow all rules
+    capability,
+    network,
+    mount,
+    remount,
+    umount,
+    pivot_root,
+    ptrace,
+    signal,
+    dbus,
+    unix,
+    file,
+}
