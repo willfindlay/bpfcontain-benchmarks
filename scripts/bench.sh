@@ -29,7 +29,7 @@ run_pts_tests() {
     # Run benchmarks
     $wrapper pts batch-benchmark $tests
     mkdir -p "$data_dir"
-    pts result-file-to-json "$result" > "$data_dir/$json"
+    pts result-file-to-json "$results" > "$data_dir/$json"
 }
 
 benchmark_bpfcontain() {
