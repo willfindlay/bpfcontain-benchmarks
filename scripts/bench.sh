@@ -7,7 +7,7 @@
 # $3: Description for test run
 #
 run_pts_tests() {
-    local tests="osbench apache build-linux-kernel"
+    local tests=$
     local results="$1"
     local json="$results.json"
     local id="$2"
@@ -27,7 +27,7 @@ run_pts_tests() {
     export TEST_RESULTS_DESCRIPTION="$description"
 
     # Run benchmarks
-    $wrapper pts batch-benchmark $tests
+    $wrapper pts batch-run $tests
     mkdir -p "$data_dir"
     pts result-file-to-json "$results" > "$data_dir/$json"
 }

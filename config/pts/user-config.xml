@@ -43,7 +43,7 @@
       <StandardDeviationThreshold>2.5</StandardDeviationThreshold>
       <ExportResultsTo></ExportResultsTo>
       <MinimalTestTime>2</MinimalTestTime>
-      <DropNoisyResults>FALSE</DropNoisyResults>
+      <DropNoisyResults>TRUE</DropNoisyResults>
     </TestResultValidation>
     <ResultViewer>
       <WebPort>RANDOM</WebPort>
