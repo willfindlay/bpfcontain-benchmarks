@@ -13,7 +13,7 @@ run_pts_tests() {
     local id="$2"
     local description="$3"
     local data_dir="data/pts"
-    local wrapper="${4:''}"
+    local wrapper="$4"
 
     # No prompts at beginning
     export PTS_SILENT_MODE=1
