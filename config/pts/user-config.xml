@@ -58,7 +58,7 @@
       <UploadResults>FALSE</UploadResults>
       <PromptForTestIdentifier>FALSE</PromptForTestIdentifier>
       <PromptForTestDescription>FALSE</PromptForTestDescription>
-      <PromptSaveName>FALSE</PromptSaveName>
+      <PromptSaveName>TRUE</PromptSaveName>
       <RunAllTestCombinations>TRUE</RunAllTestCombinations>
       <Configured>TRUE</Configured>
     </BatchMode>
