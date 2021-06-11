@@ -7,7 +7,6 @@
 # $3: Description for test run
 #
 run_pts_tests() {
-    local tests=$
     local results="$1"
     local json="$results.json"
     local id="$2"
@@ -27,7 +26,7 @@ run_pts_tests() {
     export TEST_RESULTS_DESCRIPTION="$description"
 
     # Run benchmarks
-    $wrapper pts batch-run $tests
+    $wrapper pts batch-run $PTS_TESTS
     mkdir -p "$data_dir"
     pts result-file-to-json "$results" > "$data_dir/$json"
 }
@@ -37,13 +36,14 @@ benchmark_base() {
 }
 
 benchmark_bpfcontain() {
+    export BPFCONTAIN_POLICY_DIR="$(readlink -f ./bpfcontain_profiles)"
     # Start the daemon
-    sudo bpfcontain daemon start
+    sudo -e bpfcontain daemon start
     run_pts_tests "$1" "bpfcontain-passive" "BPFContain running without doing anything" ""
     run_pts_tests "$1" "bpfcontain-allow" "BPFContain running in allow mode" "bpfcontain run bpfcontain_profiles/complain.yml --"
     run_pts_tests "$1" "bpfcontain-complaining" "BPFContain running in complaining mode" "bpfcontain run bpfcontain_profiles/complain.yml --"
     # Stop the daemon
-    sudo bpfcontain daemon stop
+    sudo -e bpfcontain daemon stop
 }
 
 benchmark_apparmor() {
@@ -59,7 +59,7 @@ benchmark_apparmor() {
 }
 
 usage() {
-    echo "USAGE: $1 [bpfcontain, apparmor]"
+    echo "USAGE: $1 [base, bpfcontain, apparmor]"
     exit -1
 }
 
