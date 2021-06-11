@@ -18,7 +18,7 @@ RUN git clone https://aur.archlinux.org/paru.git /tmp/paru && cd /tmp/paru && ma
 RUN paru --noconfirm --needed -S rust clang make libelf bpf libbpf lib32-glibc phoronix-test-suite apparmor meson bc unzip
 
 # Install BPFContain
-RUN git clone --branch will-dev https://github.com/willfindlay/bpfcontain-rs /tmp/bpfcontain-rs && cd /tmp/bpfcontain-rs && cargo install --path .
+RUN git clone --branch will-dev https://github.com/willfindlay/bpfcontain-rs /tmp/bpfcontain-rs && cd /tmp/bpfcontain-rs && cargo install --debug --path .
 
 # Set up phoronix test suite
 RUN yes | pts enterprise-setup
