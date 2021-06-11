@@ -38,12 +38,12 @@ benchmark_base() {
 benchmark_bpfcontain() {
     export BPFCONTAIN_POLICY_DIR="$(readlink -f ./bpfcontain_profiles)"
     # Start the daemon
-    sudo -e bpfcontain daemon start
+    sudo -E bpfcontain daemon start
     run_pts_tests "$1" "bpfcontain-passive" "BPFContain running without doing anything" ""
     run_pts_tests "$1" "bpfcontain-allow" "BPFContain running in allow mode" "bpfcontain run bpfcontain_profiles/complain.yml --"
     run_pts_tests "$1" "bpfcontain-complaining" "BPFContain running in complaining mode" "bpfcontain run bpfcontain_profiles/complain.yml --"
     # Stop the daemon
-    sudo -e bpfcontain daemon stop
+    sudo -E bpfcontain daemon stop
 }
 
 benchmark_apparmor() {
