@@ -32,7 +32,7 @@
       <SaveInstallationLogs>TRUE</SaveInstallationLogs>
       <SaveTestLogs>TRUE</SaveTestLogs>
       <RemoveTestInstallOnCompletion></RemoveTestInstallOnCompletion>
-      <ResultsDirectory>~/.phoronix-test-suite/test-results/</ResultsDirectory>
+      <ResultsDirectory>/benches/data/pts-raw</ResultsDirectory>
       <AlwaysUploadResultsToOpenBenchmarking>FALSE</AlwaysUploadResultsToOpenBenchmarking>
       <AutoSortRunQueue>TRUE</AutoSortRunQueue>
       <ShowPostRunStatistics>TRUE</ShowPostRunStatistics>

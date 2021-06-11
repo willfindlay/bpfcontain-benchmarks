@@ -16,8 +16,8 @@ run_pts_tests() {
 
     # No prompts at beginning
     export PTS_SILENT_MODE=1
-    # Run at least 10 times
-    export FORCE_MIN_TIMES_TO_RUN=10
+    # Run at least 11 times
+    export FORCE_MIN_TIMES_TO_RUN=11
     # Always discard first run
     export IGNORE_RUNS=1
     # Set result file name, id, and description
