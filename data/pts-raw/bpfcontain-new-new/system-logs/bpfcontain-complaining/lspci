@@ -1,0 +1,222 @@
+lspci: Unable to load libkmod resources: error -2
+Slot:	00:00.0
+Class:	Host bridge [0600]
+Vendor:	Intel Corporation [8086]
+Device:	10th Gen Core Processor Host Bridge/DRAM Registers [9b44]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+Rev:	02
+Driver:	skl_uncore
+
+Slot:	00:01.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	6th-9th Gen Core Processor PCIe Controller (x16) [1901]
+Rev:	02
+Driver:	pcieport
+
+Slot:	00:02.0
+Class:	VGA compatible controller [0300]
+Vendor:	Intel Corporation [8086]
+Device:	UHD Graphics [9bc4]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+Rev:	05
+Driver:	i915
+
+Slot:	00:04.0
+Class:	Signal processing controller [1180]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem [1903]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+Rev:	02
+
+Slot:	00:08.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th/8th Gen Core Processor Gaussian Mixture Model [1911]
+
+Slot:	00:12.0
+Class:	Signal processing controller [1180]
+Vendor:	Intel Corporation [8086]
+Device:	Comet Lake PCH Thermal Controller [06f9]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+Driver:	intel_pch_thermal
+
+Slot:	00:14.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	Comet Lake USB 3.1 xHCI Host Controller [06ed]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+ProgIf:	30
+Driver:	xhci_hcd
+
+Slot:	00:14.2
+Class:	RAM memory [0500]
+Vendor:	Intel Corporation [8086]
+Device:	Comet Lake PCH Shared SRAM [06ef]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+
+Slot:	00:14.3
+Class:	Network controller [0280]
+Vendor:	Intel Corporation [8086]
+Device:	Comet Lake PCH CNVi WiFi [06f0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Wi-Fi 6 AX201 160MHz [0074]
+Driver:	iwlwifi
+
+Slot:	00:15.0
+Class:	Serial bus controller [0c80]
+Vendor:	Intel Corporation [8086]
+Device:	Comet Lake PCH Serial IO I2C Controller #0 [06e8]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+Driver:	intel-lpss
+
+Slot:	00:17.0
+Class:	SATA controller [0106]
+Vendor:	Intel Corporation [8086]
+Device:	Device [06d3]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+ProgIf:	01
+Driver:	ahci
+
+Slot:	00:1b.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Comet Lake PCI Express Root Port #17 [06c0]
+Rev:	f0
+Driver:	pcieport
+
+Slot:	00:1d.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Comet Lake PCI Express Root Port #9 [06b0]
+Rev:	f0
+Driver:	pcieport
+
+Slot:	00:1d.5
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Device [06b5]
+Rev:	f0
+Driver:	pcieport
+
+Slot:	00:1d.6
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Device [06b6]
+Rev:	f0
+Driver:	pcieport
+
+Slot:	00:1f.0
+Class:	ISA bridge [0601]
+Vendor:	Intel Corporation [8086]
+Device:	Comet Lake LPC Controller [068d]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+
+Slot:	00:1f.3
+Class:	Audio device [0403]
+Vendor:	Intel Corporation [8086]
+Device:	Comet Lake PCH cAVS [06c8]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+Driver:	snd_hda_intel
+
+Slot:	00:1f.4
+Class:	SMBus [0c05]
+Vendor:	Intel Corporation [8086]
+Device:	Comet Lake PCH SMBus Controller [06a3]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+Driver:	i801_smbus
+
+Slot:	00:1f.5
+Class:	Serial bus controller [0c80]
+Vendor:	Intel Corporation [8086]
+Device:	Comet Lake PCH SPI Controller [06a4]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+Driver:	intel-spi
+
+Slot:	02:00.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018] [15e7]
+PhySlot:	16
+Rev:	06
+Driver:	pcieport
+
+Slot:	03:00.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018] [15e7]
+Rev:	06
+Driver:	pcieport
+
+Slot:	03:01.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018] [15e7]
+Rev:	06
+Driver:	pcieport
+
+Slot:	03:02.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018] [15e7]
+Rev:	06
+Driver:	pcieport
+
+Slot:	04:00.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	JHL7540 Thunderbolt 3 NHI [Titan Ridge 2C 2018] [15e8]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+Rev:	06
+
+Slot:	26:00.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	JHL7540 Thunderbolt 3 USB Controller [Titan Ridge 2C 2018] [15e9]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+Rev:	06
+ProgIf:	30
+Driver:	xhci_hcd
+
+Slot:	27:00.0
+Class:	Non-Volatile memory controller [0108]
+Vendor:	Samsung Electronics Co Ltd [144d]
+Device:	NVMe SSD Controller SM981/PM981/PM983 [a808]
+SVendor:	Samsung Electronics Co Ltd [144d]
+SDevice:	Device [a801]
+ProgIf:	02
+Driver:	nvme
+NUMANode:	0
+
+Slot:	28:00.0
+Class:	Ethernet controller [0200]
+Vendor:	Realtek Semiconductor Co., Ltd. [10ec]
+Device:	RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [8168]
+SVendor:	CLEVO/KAPOK Computer [1558]
+SDevice:	Device [50d3]
+Rev:	15
+Driver:	r8169
+
+Slot:	29:00.0
+Class:	Unassigned class [ff00]
+Vendor:	Realtek Semiconductor Co., Ltd. [10ec]
+Device:	RTS525A PCI Express Card Reader [525a]
+SVendor:	Realtek Semiconductor Co., Ltd. [10ec]
+SDevice:	RTS525A PCI Express Card Reader [525a]
+Rev:	01
+Driver:	rtsx_pci
+
