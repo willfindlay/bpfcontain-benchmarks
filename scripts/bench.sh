@@ -46,6 +46,28 @@ benchmark_bpfcontain() {
     sudo -E bpfcontain daemon stop
 }
 
+benchmark_bpfbox() {
+    sudo mkdir -p /var/lib/bpfbox/policy
+    suro rm /var/lib/bpfbox/policy/*
+    sudo -E /tmp/bpfbox/bin/bpfboxd start --permissive
+    run_pts_tests "$1" "bpfbox-passive" "BPFBox running without doing anything" ""
+    sudo -E /tmp/bpfbox/bin/bpfboxd stop
+
+    sleep 5
+    suro rm /var/lib/bpfbox/policy/*
+    sudo cp bpfbox_profiles/pts-allow.toml /var/lib/bpfbox/policy
+    sudo -E /tmp/bpfbox/bin/bpfboxd start --permissive
+    run_pts_tests "$1" "bpfbox-allow" "BPFBox running in allow mode (untainted)" ""
+    sudo -E /tmp/bpfbox/bin/bpfboxd stop
+
+    sleep 5
+    suro rm /var/lib/bpfbox/policy/*
+    sudo cp bpfbox_profiles/pts-complain.toml /var/lib/bpfbox/policy
+    sudo -E /tmp/bpfbox/bin/bpfboxd start --permissive
+    run_pts_tests "$1" "bpfbox-complaining" "BPFBox running in complaining mode" ""
+    sudo -E /tmp/bpfbox/bin/bpfboxd stop
+}
+
 benchmark_apparmor() {
     # Disable rate limiting
     sudo sysctl -w kernel.printk_ratelimit=0
@@ -59,13 +81,16 @@ benchmark_apparmor() {
 }
 
 usage() {
-    echo "USAGE: $1 [base, bpfcontain, apparmor]"
+    echo "USAGE: $1 [base, bpfbox, bpfcontain, apparmor]"
     exit -1
 }
 
 case $1 in
     base)
         benchmark_base results
+        ;;
+    bpfbox)
+        benchmark_bpfbox results
         ;;
     bpfcontain)
         benchmark_bpfcontain results

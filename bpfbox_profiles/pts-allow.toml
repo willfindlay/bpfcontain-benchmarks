@@ -1,0 +1,2 @@
+# Use bash for this since it is what invokes pts
+profile = /usr/bin/bash

@@ -1,0 +1,7 @@
+# Use bash for this since it is what invokes pts
+profile = /usr/bin/bash
+
+[[fs]]
+  action = ['allow', 'taint']
+  access = ['exec', 'getattr', 'read']
+  file   = '/usr/sbin/pts'
