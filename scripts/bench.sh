@@ -48,20 +48,20 @@ benchmark_bpfcontain() {
 
 benchmark_bpfbox() {
     sudo mkdir -p /var/lib/bpfbox/policy
-    suro rm /var/lib/bpfbox/policy/*
+    sudo rm /var/lib/bpfbox/policy/*
     sudo -E /tmp/bpfbox/bin/bpfboxd start --permissive
     run_pts_tests "$1" "bpfbox-passive" "BPFBox running without doing anything" ""
     sudo -E /tmp/bpfbox/bin/bpfboxd stop
 
     sleep 5
-    suro rm /var/lib/bpfbox/policy/*
+    sudo rm /var/lib/bpfbox/policy/*
     sudo cp bpfbox_profiles/pts-allow.toml /var/lib/bpfbox/policy
     sudo -E /tmp/bpfbox/bin/bpfboxd start --permissive
     run_pts_tests "$1" "bpfbox-allow" "BPFBox running in allow mode (untainted)" ""
     sudo -E /tmp/bpfbox/bin/bpfboxd stop
 
     sleep 5
-    suro rm /var/lib/bpfbox/policy/*
+    sudo rm /var/lib/bpfbox/policy/*
     sudo cp bpfbox_profiles/pts-complain.toml /var/lib/bpfbox/policy
     sudo -E /tmp/bpfbox/bin/bpfboxd start --permissive
     run_pts_tests "$1" "bpfbox-complaining" "BPFBox running in complaining mode" ""

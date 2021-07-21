@@ -1,6 +1,7 @@
 FROM archlinux:latest
 
 # System upgrade
+ARG CACHE_DATE=2021-07-21
 RUN pacman --noconfirm --needed -Syu
 RUN pacman --noconfirm --needed -S git sudo base-devel
 
