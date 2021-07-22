@@ -48,12 +48,12 @@ benchmark_bpfcontain() {
 
 benchmark_bpfbox() {
     sudo mkdir -p /var/lib/bpfbox/policy
-    sudo rm /var/lib/bpfbox/policy/*
-    sudo -E /tmp/bpfbox/bin/bpfboxd start --permissive
-    run_pts_tests "$1" "bpfbox-passive" "BPFBox running without doing anything" ""
-    sudo -E /tmp/bpfbox/bin/bpfboxd stop
+    # sudo rm /var/lib/bpfbox/policy/*
+    # sudo -E /tmp/bpfbox/bin/bpfboxd start --permissive
+    # run_pts_tests "$1" "bpfbox-passive" "BPFBox running without doing anything" ""
+    # sudo -E /tmp/bpfbox/bin/bpfboxd stop
 
-    sleep 5
+    # sleep 5
     sudo rm /var/lib/bpfbox/policy/*
     sudo cp bpfbox_profiles/pts-allow.toml /var/lib/bpfbox/policy
     sudo -E /tmp/bpfbox/bin/bpfboxd start --permissive

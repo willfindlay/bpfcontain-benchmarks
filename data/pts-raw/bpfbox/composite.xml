@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>bpfbox</Title>
-    <LastModified>2021-07-21 23:53:10</LastModified>
+    <LastModified>2021-07-22 00:14:26</LastModified>
     <TestClient>Phoronix Test Suite v10.4.0 (Ibestad)</TestClient>
     <Description>docker testing on Arch Linux via the Phoronix Test Suite.</Description>
     <Notes></Notes>
@@ -27,7 +27,7 @@
     <Software>OS: Arch Linux, Kernel: 5.12.14-arch1-1 (x86_64), Compiler: GCC 11.1.0 + Clang 12.0.1, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
     <User>bench</User>
     <TimeStamp>2021-07-21 23:51:17</TimeStamp>
-    <TestClientVersion>10.4.0</TestClientVersion>
+    <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>

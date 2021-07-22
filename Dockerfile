@@ -23,7 +23,7 @@ ARG CACHE_DATE=2021-07-21
 RUN git clone https://github.com/willfindlay/bpfcontain-rs /tmp/bpfcontain-rs && cd /tmp/bpfcontain-rs && cargo install --path .
 
 # Install BPFBox
-ARG CACHE_DATE=2021-07-21
+ARG CACHE_DATE=2021-07-22
 RUN git clone --branch=thesis https://github.com/willfindlay/bpfbox /tmp/bpfbox && cd /tmp/bpfbox && sudo make package
 
 # Set up phoronix test suite
@@ -39,6 +39,7 @@ RUN pts install $PTS_TESTS
 # Copy over files
 COPY . /benches
 COPY ./config/pts/user-config.xml /home/bench/.phoronix-test-suite/user-config.xml
+RUN sudo ln -s /tmp/bpfbox/bin/bpfboxd /benches/bpfboxd
 
 # Set workdir to /benches
 WORKDIR /benches
