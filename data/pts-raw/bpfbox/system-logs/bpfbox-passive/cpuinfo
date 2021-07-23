@@ -5,7 +5,7 @@ model		: 165
 model name	: Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz
 stepping	: 2
 microcode	: 0xc8
-cpu MHz		: 2300.000
+cpu MHz		: 2300.178
 cache size	: 16384 KB
 physical id	: 0
 siblings	: 8
@@ -145,7 +145,7 @@ model		: 165
 model name	: Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz
 stepping	: 2
 microcode	: 0xc8
-cpu MHz		: 2300.144
+cpu MHz		: 2300.000
 cache size	: 16384 KB
 physical id	: 0
 siblings	: 8
