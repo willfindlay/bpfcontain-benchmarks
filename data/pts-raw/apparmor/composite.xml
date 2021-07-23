@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.4.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>apparmor</Title>
+    <LastModified>2021-07-23 17:41:25</LastModified>
+    <TestClient>Phoronix Test Suite v10.4.0 (Ibestad)</TestClient>
+    <Description>docker testing on Arch Linux via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>apparmor-passive</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel CometLake-H GT2 [UHD ] (1200MHz), Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.14-arch1-1 (x86_64), Compiler: GCC 11.1.0 + Clang 12.0.1, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-07-23 13:57:42</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>apparmor-allow</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel CometLake-H GT2 [UHD ] (1200MHz), Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.14-arch1-1 (x86_64), Compiler: GCC 11.1.0 + Clang 12.0.1, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-07-23 15:18:41</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>apparmor-complaining</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel CometLake-H GT2 [UHD ] (1200MHz), Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.14-arch1-1 (x86_64), Compiler: GCC 11.1.0 + Clang 12.0.1, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-07-23 16:26:04</TimeStamp>
+    <TestClientVersion>10.4.0</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/osbench-1.0.2</Identifier>
+    <Title>OSBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>create_files.exe target</Arguments>
+    <Description>Test: Create Files</Description>
+    <Scale>us Per Event</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>43.867697</Value>
+        <RawString>44.889157:44.485551:44.611316:43.878459:42.922362:42.543688:42.495851:44.932174:43.473344:44.445066</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"6.62:5.96:5.86:5.86:5.90:5.81:5.78:5.72:5.94:5.83:5.90"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>47.069141</Value>
+        <RawString>46.971909:48.040496:45.034652:48.499099:47.490508:48.050523:47.509826:45.903195:47.495059:45.69614</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"6.75:6.28:6.38:6.01:6.42:6.34:6.38:6.34:6.12:6.32:6.07"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>111.659917</Value>
+        <RawString>112.180867:112.330193:111.319557:109.99733:111.53778:112.464078:111.295556:111.266397:112.322553:111.884854</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"7.80:7.36:7.37:7.30:7.22:7.32:7.38:7.30:7.30:7.37:7.34"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/osbench-1.0.2</Identifier>
+    <Title>OSBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>create_threads.exe</Arguments>
+    <Description>Test: Create Threads</Description>
+    <Scale>us Per Event</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>20.324945</Value>
+        <RawString>20.599365:20.320415:20.349026:20.151138:20.680428:19.919872:20.489693:20.530224:20.201206:20.008087</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.02:5.03:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>20.291567</Value>
+        <RawString>20.289421:20.229816:20.289421:20.179749:20.470619:20.349026:20.518303:19.891262:20.239353:20.458698</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.02:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>20.322323</Value>
+        <RawString>20.501614:20.329952:19.96994:20.370483:20.270348:20.430088:20.530224:20.22028:20.210743:20.389557</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/osbench-1.0.2</Identifier>
+    <Title>OSBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>launch_programs.exe</Arguments>
+    <Description>Test: Launch Programs</Description>
+    <Scale>us Per Event</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>62.839031</Value>
+        <RawString>63.130856:62.811375:62.580109:62.48951:62.558651:62.949657:62.64925:63.05933:63.130856:63.03072</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.02:5.01:5.01:5.02:5.02:5.01:5.02:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>63.174009</Value>
+        <RawString>63.269138:63.068867:62.730312:63.180923:63.381195:63.169003:63.509941:63.140392:63.099861:63.19046</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.01:5.03:5.01:5.02:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>90.555191</Value>
+        <RawString>91.57896:88.140965:93.610287:90.031624:91.638565:89.099407:87.401867:91.350079:90.069771:92.630386</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.02:5.01:5.02:5.01:5.01:5.02:5.01:5.02:5.02:5.01:5.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/osbench-1.0.2</Identifier>
+    <Title>OSBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>create_processes.exe</Arguments>
+    <Description>Test: Create Processes</Description>
+    <Scale>us Per Event</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>39.044380</Value>
+        <RawString>38.5499:38.490295:39.350986:38.671494:38.590431:39.789677:40.688515:38.361549:38.669109:39.281845</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.03:5.01:5.01:5.03:5.01:5.01:5.01:5.01:5.03:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>38.939476</Value>
+        <RawString>38.509369:38.611889:39.510727:39.179325:39.200783:38.559437:39.000511:39.131641:38.650036:39.041042</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.02:5.02:5.01:5.01:5.01:5.01:5.02:5.02:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>38.681269</Value>
+        <RawString>38.628578:38.437843:40.049553:38.919449:38.919449:38.230419:38.640499:38.208961:38.099289:38.678646</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.02:5.01:5.01:5.01:5.01:5.02:5.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/osbench-1.0.2</Identifier>
+    <Title>OSBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>mem_alloc.exe</Arguments>
+    <Description>Test: Memory Allocations</Description>
+    <Scale>Ns Per Event</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>117.237997</Value>
+        <RawString>119.600058:116.554022:116.574049:116.626978:116.684914:117.056131:116.973877:117.012978:117.027998:118.268967</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.05:5.05:5.04:5.05:5.04:5.04:5.05:5.05:5.05:5.05:5.11"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>117.491651</Value>
+        <RawString>117.871046:117.937088:118.367195:116.535902:116.543055:116.614103:116.571188:118.111849:118.28208:118.083</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.04:5.10:5.10:5.12:5.04:5.04:5.04:5.04:5.10:5.11:5.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>116.808796</Value>
+        <RawString>116.860867:116.245985:115.872145:118.129969:115.97991:117.532015:116.502047:116.526127:117.939949:116.498947</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.04:5.05:5.02:5.12:5.11:5.13:5.08:5.04:5.03:5.09:5.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.11.0</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>5.10.20</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>236.446</Value>
+        <RawString>242.161:235.696:235.576:235.46:235.727:235.669:235.907:236.656:236.04:235.814:236.196</RawString>
+        <JSON>{"test-run-times":"242.16:235.70:235.58:235.46:235.73:235.67:235.91:236.66:236.04:235.81:236.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>237.589</Value>
+        <RawString>243.622:236.802:237.952:236.722:237.279:236.964:236.921:236.64:237.41:236.587:236.581</RawString>
+        <JSON>{"test-run-times":"243.62:236.80:237.95:236.72:237.28:236.96:236.92:236.64:237.41:236.59:236.58"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>288.539</Value>
+        <RawString>294.786:287.227:287.588:287.747:288.331:287.376:287.844:288.3:288.297:288.072:288.365</RawString>
+        <JSON>{"test-run-times":"294.79:287.23:287.59:287.75:288.33:287.38:287.84:288.30:288.30:288.07:288.37"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/apache-1.7.2</Identifier>
+    <Title>Apache Benchmark</Title>
+    <AppVersion>2.4.29</AppVersion>
+    <Arguments></Arguments>
+    <Description>Static Web Page Serving</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>20363.42</Value>
+        <RawString>20698.56:20502.67:20710.26:20684.99:20757.33:20111.34:20053.29:20034.98:20001.63:20079.13</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"},"test-run-times":"49.64:49.83:50.30:49.82:49.87:49.70:51.24:51.39:51.43:51.52:51.32"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>20276.95</Value>
+        <RawString>20332.76:20230.39:20307.44:20181.87:20340.08:20159.35:20276.51:20315.25:20306.25:20319.61</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"},"test-run-times":"50.97:50.70:50.96:50.77:51.07:50.69:51.13:50.83:50.74:50.77:50.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>19827.05</Value>
+        <RawString>20504.54:20238.11:19760.75:19750.73:19685.4:19719.45:19612.48:19710.82:19597.36:19690.83</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"},"test-run-times":"50.62:50.29:50.94:52.13:52.16:52.33:52.24:52.51:52.27:52.55:52.31"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
