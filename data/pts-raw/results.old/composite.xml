@@ -1,0 +1,462 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.4.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>results</Title>
+    <LastModified>2021-06-11 20:31:24</LastModified>
+    <TestClient>Phoronix Test Suite v10.4.0 (Ibestad)</TestClient>
+    <Description>docker testing on Arch Linux via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>apparmor-passive</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel UHD, Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.9-arch1-1 (x86_64), Display Driver: NVIDIA, Compiler: GCC 11.1.0 + Clang 12.0.0, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-06-11 03:28:36</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>apparmor-allow</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel UHD, Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.9-arch1-1 (x86_64), Display Driver: NVIDIA, Compiler: GCC 11.1.0 + Clang 12.0.0, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-06-11 04:45:55</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>apparmor-complaining</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel UHD, Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.9-arch1-1 (x86_64), Display Driver: NVIDIA, Compiler: GCC 11.1.0 + Clang 12.0.0, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-06-11 10:41:47</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>base</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel UHD, Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.9-arch1-1 (x86_64), Display Driver: NVIDIA, Compiler: GCC 11.1.0 + Clang 12.0.0, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-06-11 12:27:59</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>bpfcontain-passive</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel UHD, Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.9-arch1-1 (x86_64), Display Driver: NVIDIA, Compiler: GCC 11.1.0 + Clang 12.0.0, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-06-11 13:46:43</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>bpfcontain-complaining</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel UHD, Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.9-arch1-1 (x86_64), Display Driver: NVIDIA, Compiler: GCC 11.1.0 + Clang 12.0.0, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-06-11 17:28:10</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>bpfcontain-allow</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel UHD, Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.9-arch1-1 (x86_64), Display Driver: NVIDIA, Compiler: GCC 11.1.0 + Clang 12.0.0, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-06-11 19:19:08</TimeStamp>
+    <TestClientVersion>10.4.0</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/osbench-1.0.2</Identifier>
+    <Title>OSBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>create_files.exe target</Arguments>
+    <Description>Test: Create Files</Description>
+    <Scale>us Per Event</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>44.861293</Value>
+        <RawString>43.738302:45.554367:45.351511:45.257772:44.765284:44.571064:44.351982:45.18688:45.137027:44.698736</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"6.77:5.80:6.01:5.97:5.96:5.96:5.95:5.99:5.98:5.99:5.96"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>49.160755</Value>
+        <RawString>48.832501:49.22727:49.921505:48.532013:49.492007:48.657138:49.738473:49.905697:48.606797:48.694144</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"6.86:6.56:6.55:6.67:6.46:6.63:6.48:6.63:6.64:6.47:6.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>115.089713</Value>
+        <RawString>118.847944:114.975845:114.56621:114.488722:114.270652:115.299769:114.854001:115.672142:115.119527:112.802315</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"7.98:7.80:7.54:7.52:7.51:7.50:7.57:7.54:7.59:7.55:7.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>43.496989</Value>
+        <RawString>45.836956:44.958448:42.904368:44.144979:42.403592:41.564256:42.20974:44.557709:43.428053:42.961792</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"6.56:6.04:5.93:5.71:5.93:5.80:5.64:5.66:5.90:5.74:5.87"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>48.112109</Value>
+        <RawString>48.125598:48.014174:47.899851:48.16529:48.16477:48.136767:48.102573:47.834224:48.733192:47.944654</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"7.18:6.46:6.45:6.45:6.43:6.44:6.45:6.44:6.38:6.48:6.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>58.329522</Value>
+        <RawString>58.32176:57.824582:58.755624:56.564319:57.664604:57.956859:58.089406:58.249045:60.474243:59.394774</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"8.52:7.73:7.66:7.76:7.50:7.68:7.66:7.71:7.72:8.06:7.86"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>57.366706</Value>
+        <RawString>55.681081:56.092396:56.97328:56.44365:56.548889:56.552262:58.291454:58.75538:58.848188:59.48048</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"8.15:7.41:7.47:7.56:7.58:7.53:7.57:7.80:7.83:7.80:7.89"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/osbench-1.0.2</Identifier>
+    <Title>OSBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>create_threads.exe</Arguments>
+    <Description>Test: Create Threads</Description>
+    <Scale>us Per Event</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>20.635843</Value>
+        <RawString>20.661354:20.627975:20.730495:20.580292:20.499229:20.558834:20.730495:20.699501:20.670891:20.599365</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.02:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>20.802736</Value>
+        <RawString>20.720959:20.7901:20.601749:21.162033:20.949841:20.730495:20.861626:20.771027:20.740032:20.699501</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>20.763874</Value>
+        <RawString>21.028519:20.778179:20.799637:20.661354:20.890236:20.759106:20.711422:20.620823:20.589828:20.799637</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>20.639658</Value>
+        <RawString>20.92123:20.489693:20.701885:20.811558:20.670891:20.501614:20.639896:20.580292:20.499229:20.580292</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.03:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.02:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>21.088839</Value>
+        <RawString>20.859241:21.088123:21.269321:21.059513:21.131039:20.909309:20.949841:21.002293:21.429062:21.190643</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.03:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>24.384022</Value>
+        <RawString>24.549961:24.390221:24.07074:24.452209:24.299622:24.528503:24.559498:24.609566:24.189949:24.189949</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>24.259090</Value>
+        <RawString>24.411678:24.170876:24.068356:24.280548:24.371147:24.139881:24.189949:24.309158:24.368763:24.280548</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/osbench-1.0.2</Identifier>
+    <Title>OSBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>launch_programs.exe</Arguments>
+    <Description>Test: Launch Programs</Description>
+    <Scale>us Per Event</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>61.239958</Value>
+        <RawString>61.681271:61.631203:60.651302:60.899258:60.539246:61.130524:61.841011:60.818195:60.927868:62.279701</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.02:5.02:5.01:5.01:5.01:5.01:5.02:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>61.945200</Value>
+        <RawString>62.78038:61.318874:61.130524:62.541962:61.659813:61.490536:61.831474:61.399937:63.05933:62.23917</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.02:5.01:5.01:5.02:5.02:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>88.608742</Value>
+        <RawString>90.110302:89.349747:88.10997:86.829662:93.419552:88.059902:89.108944:88.660717:86.479187:85.959435</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.02:5.01:5.02:5.02:5.02:5.01:5.02:5.02:5.02:5.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>58.973313</Value>
+        <RawString>59.020519:57.971478:59.349537:59.06105:59.909821:58.979988:60.079098:58.438778:58.732033:58.190823</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>60.617924</Value>
+        <RawString>61.14006:61.070919:60.191154:60.248375:60.558319:60.949326:61.020851:60.710907:60.560703:59.728622</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.02:5.01:5.01:5.01:5.02:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>71.472645</Value>
+        <RawString>67.16013:72.948933:73.637962:69.55862:69.348812:71.361065:71.148872:75.120926:70.4813:73.959827</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.02:5.01:5.01:5.02:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>68.512917</Value>
+        <RawString>66.11824:70.500374:66.730976:71.098804:66.659451:70.869923:66.320896:67.820549:71.790218:67.219734</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.02:5.02:5.01:5.01:5.01:5.02:5.01:5.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/osbench-1.0.2</Identifier>
+    <Title>OSBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>create_processes.exe</Arguments>
+    <Description>Test: Create Processes</Description>
+    <Scale>us Per Event</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>38.944721</Value>
+        <RawString>38.890839:39.730072:40.028095:38.499832:38.731098:38.290024:39.80875:38.239956:38.650036:38.57851</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.03:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>38.503170</Value>
+        <RawString>38.239956:38.599968:38.659573:38.781166:38.449764:38.530827:38.349628:38.080215:38.509369:38.831234</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.03:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>38.853884</Value>
+        <RawString>40.421486:38.080215:38.98859:38.449764:38.969517:38.290024:38.788319:38.750172:38.940907:38.859844</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>38.103342</Value>
+        <RawString>37.72974:38.80024:37.679672:37.999153:37.920475:37.679672:37.779808:39.191246:38.611889:37.641525</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.03:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>38.194656</Value>
+        <RawString>38.239956:37.829876:38.249493:37.961006:37.739277:37.949085:37.910938:38.049221:39.339066:38.678646</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.03:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>40.652752</Value>
+        <RawString>40.550232:40.6003:40.259361:40.669441:40.209293:40.948391:41.069984:40.431023:41.060448:40.729046</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>41.371107</Value>
+        <RawString>42.259693:42.479038:41.651726:41.661263:40.769577:40.650368:41.42046:41.429996:40.559769:40.829182</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01:5.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/osbench-1.0.2</Identifier>
+    <Title>OSBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>mem_alloc.exe</Arguments>
+    <Description>Test: Memory Allocations</Description>
+    <Scale>Ns Per Event</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>119.090152</Value>
+        <RawString>119.488955:119.572163:119.665146:117.614031:119.958878:119.586945:119.651794:120.276928:117.668867:117.417812</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.05:5.07:5.04:5.09:5.10:5.06:5.05:5.05:5.08:5.09:5.07"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>119.075775</Value>
+        <RawString>117.504835:117.604971:117.606878:117.778063:120.540142:120.462894:120.512009:120.532036:120.540857:117.675066</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.09:5.08:5.08:5.08:5.09:5.09:5.08:5.09:5.09:5.09:5.08"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>117.567396</Value>
+        <RawString>116.324902:116.782904:118.394852:117.196083:119.127035:119.147062:118.390083:116.292:117.671967:116.347075</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.11:5.04:5.05:5.12:5.07:5.03:5.03:5.11:5.03:5.08:5.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>117.504263</Value>
+        <RawString>116.979837:116.990805:116.96887:117.022038:116.97197:118.065119:117.59901:119.235992:117.295027:117.913961</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.10:5.07:5.07:5.06:5.06:5.05:5.11:5.08:5.03:5.06:5.09"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>117.482066</Value>
+        <RawString>117.359161:117.187023:117.209196:117.215157:117.175102:117.844105:117.221832:118.133068:118.208885:117.267132</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.07:5.09:5.07:5.07:5.06:5.07:5.09:5.06:5.12:5.01:5.09"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>114.936686</Value>
+        <RawString>114.632845:114.773035:114.82811:115.071058:115.064859:114.991903:114.959955:115.181923:114.959002:114.904165</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.06:5.07:5.07:5.07:5.09:5.09:5.08:5.08:5.09:5.08:5.08"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>116.964030</Value>
+        <RawString>114.707947:116.700888:116.648912:116.647959:117.490053:118.507862:116.833925:118.567944:116.756916:116.777897</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"5.07:5.07:5.04:5.04:5.04:5.07:5.12:5.05:5.12:5.04:5.04"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.11.0</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>5.10.20</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>236.257</Value>
+        <RawString>242.305:235.08:235.629:235.375:235.349:235.116:236.609:235.339:236.202:236.019:235.809</RawString>
+        <JSON>{"test-run-times":"242.30:235.08:235.63:235.37:235.35:235.12:236.61:235.34:236.20:236.02:235.81"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>237.325</Value>
+        <RawString>243.295:236.639:237.146:236.605:236.504:236.661:237.201:236.411:236.683:236.742:236.691</RawString>
+        <JSON>{"test-run-times":"243.29:236.64:237.15:236.60:236.50:236.66:237.20:236.41:236.68:236.74:236.69"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>288.890</Value>
+        <RawString>294.809:288.459:288.382:287.967:288.29:288.165:288.256:288.249:287.956:288.087:289.172</RawString>
+        <JSON>{"test-run-times":"294.81:288.46:288.38:287.97:288.29:288.17:288.26:288.25:287.96:288.09:289.17"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>235.496</Value>
+        <RawString>241.263:234.992:235.087:235.009:235.044:234.591:235.092:234.825:234.583:235.094:234.875</RawString>
+        <JSON>{"test-run-times":"241.26:234.99:235.09:235.01:235.04:234.59:235.09:234.83:234.58:235.09:234.87"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>237.136</Value>
+        <RawString>243.684:236.273:236.811:236.78:236.177:236.182:236.044:237.074:236.415:236.996:236.058</RawString>
+        <JSON>{"test-run-times":"243.68:236.27:236.81:236.78:236.18:236.18:236.04:237.07:236.41:237.00:236.06"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>269.997</Value>
+        <RawString>276.375:268.843:269.825:269.039:269.312:269.214:269.433:269.53:269.904:269.254:269.237</RawString>
+        <JSON>{"test-run-times":"276.38:268.84:269.82:269.04:269.31:269.21:269.43:269.53:269.90:269.25:269.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>269.271</Value>
+        <RawString>275.435:268.183:268.797:268.762:268.521:268.833:268.575:268.3:268.593:268.923:269.064</RawString>
+        <JSON>{"test-run-times":"275.43:268.18:268.80:268.76:268.52:268.83:268.57:268.30:268.59:268.92:269.06"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/apache-1.7.2</Identifier>
+    <Title>Apache Benchmark</Title>
+    <AppVersion>2.4.29</AppVersion>
+    <Arguments></Arguments>
+    <Description>Static Web Page Serving</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>apparmor-passive</Identifier>
+        <Value>18776.64</Value>
+        <RawString>19472.56:19379.63:18795.8:18745.46:18836.13:18716.62:18490.2:18470.74:18365.06:18494.17</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"},"test-run-times":"51.84:52.89:53.13:54.72:54.86:54.60:54.94:55.60:55.66:55.97:55.60"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-allow</Identifier>
+        <Value>18527.67</Value>
+        <RawString>19226.83:18937.68:18688.06:18317.02:18375.17:18340.24:18307.58:18404.28:18318.05:18361.79</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"},"test-run-times":"53.10:53.53:54.32:55.04:56.12:55.94:56.05:56.15:55.85:56.11:55.98"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>apparmor-complaining</Identifier>
+        <Value>18867.83</Value>
+        <RawString>19363.92:19488.3:19301.91:18991.05:18684.85:18826.81:18927.25:18270.8:18424.03:18399.33</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"},"test-run-times":"52.94:53.16:52.84:53.34:54.19:55.05:54.64:54.37:56.26:55.81:55.87"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>21164.18</Value>
+        <RawString>21132.86:21180.23:20957.76:21162.2:21361.3:21057.97:21131.72:21325.39:21248.7:21083.68</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"},"test-run-times":"48.78:48.84:48.73:49.24:48.77:48.34:49.00:48.83:48.40:48.58:48.95"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>19319.03</Value>
+        <RawString>19736.86:19682.81:19844.12:19454.02:19887.42:19238.42:19217.48:18924.25:18668.31:18536.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"},"test-run-times":"51.97:52.18:52.32:51.92:52.93:51.80:53.50:53.56:54.36:55.08:55.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>17913.20</Value>
+        <RawString>17860.7:17802.58:17800.69:17867.06:18194.53:17969.72:17971.3:17938.19:17902.58:17824.66</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"},"test-run-times":"57.84:57.51:57.70:57.70:57.49:56.48:57.17:57.17:57.28:57.39:57.64"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>18894.36</Value>
+        <RawString>19799.62:19277.82:19197.21:19163.49:19001.68:18541.36:18444.78:18661.11:18464.3:18392.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"},"test-run-times":"52.01:52.03:53.40:53.61:53.70:54.15:55.46:55.74:55.11:55.69:55.89"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
