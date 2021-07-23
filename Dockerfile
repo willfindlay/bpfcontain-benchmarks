@@ -24,7 +24,7 @@ RUN git clone https://github.com/willfindlay/bpfcontain-rs /tmp/bpfcontain-rs &&
 
 # Install BPFBox
 ARG CACHE_DATE=2021-07-22
-RUN git clone --branch=thesis https://github.com/willfindlay/bpfbox /tmp/bpfbox && cd /tmp/bpfbox && sudo make package
+RUN git clone --branch=thesis-benchmarks https://github.com/willfindlay/bpfbox /tmp/bpfbox && cd /tmp/bpfbox && sudo make package
 
 # Set up phoronix test suite
 RUN yes | pts enterprise-setup
