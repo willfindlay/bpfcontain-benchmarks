@@ -29,8 +29,10 @@ RUN git clone --branch=thesis-benchmarks https://github.com/willfindlay/bpfbox /
 # Set up phoronix test suite
 RUN yes | pts enterprise-setup
 
+ARG CACHE_DATE=2021-07-23
 # Set environment vartiables
-ENV PTS_TESTS="osbench apache build-linux-kernel"
+#ENV PTS_TESTS="osbench apache build-linux-kernel"
+ENV PTS_TESTS="ipc-benchmark"
 ENV PATH $PATH:/home/bench/.cargo/bin
 
 # Install pts tests
