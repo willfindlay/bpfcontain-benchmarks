@@ -1,8 +1,10 @@
 TARGET = bpfcontain-benchmarks
-RUN_FLAGS = --privileged --cap-add=SYS_ADMIN --cap-add=MAC_ADMIN -v $(shell readlink -f data):/benches/data:rw \
-	-v /lib/modules:/lib/modules:ro  -v /usr/include/linux:/usr/include/linux:ro \
-	-v /sys/kernel/debug:/sys/kernel/debug \
-	-v /sys/kernel/security:/sys/kernel/security:rw
+RUN_FLAGS = --rm --privileged --cap-add=SYS_ADMIN --cap-add=MAC_ADMIN \
+		-v $(shell readlink -f data):/benches/data:rw \
+		-v /lib/modules:/lib/modules:ro \
+		-v /usr/include/linux:/usr/include/linux:ro \
+		-v /sys/kernel/debug:/sys/kernel/debug \
+		-v /sys/kernel/security:/sys/kernel/security:rw
 
 .PHONY: run
 run: | build

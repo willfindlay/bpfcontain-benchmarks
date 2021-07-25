@@ -1,0 +1,764 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.4.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>ipc-bpfcontain-new</Title>
+    <LastModified>2021-07-25 03:24:40</LastModified>
+    <TestClient>Phoronix Test Suite v10.4.0 (Ibestad)</TestClient>
+    <Description>docker testing on Arch Linux via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>bpfcontain-passive</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel CometLake-H GT2 [UHD ] (1200MHz), Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.14-arch1-1 (x86_64), Compiler: GCC 11.1.0 + Clang 12.0.1, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-07-24 23:40:34</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>bpfcontain-allow</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel CometLake-H GT2 [UHD ] (1200MHz), Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.14-arch1-1 (x86_64), Compiler: GCC 11.1.0 + Clang 12.0.1, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-07-25 00:56:50</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>bpfcontain-complaining</Identifier>
+    <Hardware>Processor: Intel Core i7-10875H @ 2.30GHz (8 Cores), Motherboard: System76 Oryx Pro (2020-10-19_d5deed5 BIOS), Chipset: Intel Comet Lake PCH, Memory: 32GB, Disk: 1000GB Samsung SSD 970 EVO Plus 1TB, Graphics: Intel CometLake-H GT2 [UHD ] (1200MHz), Audio: Realtek ALC1220, Network: Realtek RTL8111/8168/8411 + Intel Comet Lake PCH CNVi WiFi</Hardware>
+    <Software>OS: Arch Linux, Kernel: 5.12.14-arch1-1 (x86_64), Compiler: GCC 11.1.0 + Clang 12.0.1, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: docker</Software>
+    <User>bench</User>
+    <TimeStamp>2021-07-25 02:17:08</TimeStamp>
+    <TestClientVersion>10.4.0</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-werror --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate performance","cpu-microcode":"0xc8","kernel-extra-details":"Transparent Huge Pages: madvise","security":"itlb_multihit: KVM: Mitigation of VMX disabled + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced IBRS IBPB: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>tcp 128</Arguments>
+    <Description>Type: TCP Socket - Message Bytes: 128</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>1383043</Value>
+        <RawString>1383661:1382205:1387018:1388628:1384098:1384844:1378558:1376311:1383609:1381494</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"7.92:7.51:7.52:7.50:7.49:7.51:7.51:7.54:7.55:7.51:7.52"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>1262332</Value>
+        <RawString>1266316:1269988:1264030:1260007:1262724:1248597:1266307:1256014:1264192:1265143</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"8.45:8.12:8.10:8.13:8.15:8.14:8.22:8.12:8.18:8.13:8.12"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>845704</Value>
+        <RawString>841131:840140:841379:839962:838704:853001:853372:853885:841662:853803</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"11.68:11.71:11.72:11.71:11.72:11.74:11.56:11.56:11.55:11.70:11.55"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>tcp 256</Arguments>
+    <Description>Type: TCP Socket - Message Bytes: 256</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>1330561</Value>
+        <RawString>1334477:1313534:1306501:1333999:1340272:1334098:1334623:1330640:1339394:1338071</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"7.76:7.75:7.86:7.90:7.76:7.72:7.76:7.75:7.77:7.73:7.74"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>1223603</Value>
+        <RawString>1222951:1224969:1222566:1219936:1228071:1223936:1226060:1223468:1224615:1219459</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"8.37:8.37:8.36:8.37:8.39:8.34:8.36:8.35:8.37:8.36:8.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>834338</Value>
+        <RawString>835183:835276:834033:834102:833435:832974:836224:835937:835105:831109</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"11.68:11.79:11.78:11.80:11.80:11.81:11.81:11.77:11.78:11.79:11.84"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>tcp 512</Arguments>
+    <Description>Type: TCP Socket - Message Bytes: 512</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>1219722</Value>
+        <RawString>1215601:1213730:1216295:1228364:1229012:1199308:1218438:1223751:1228071:1224651</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"8.39:8.41:8.42:8.41:8.34:8.33:8.51:8.40:8.36:8.34:8.36"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>1133481</Value>
+        <RawString>1137028:1135829:1139450:1124509:1137551:1134471:1143406:1128340:1121609:1132619</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"8.91:8.92:8.94:8.91:9.02:8.92:8.95:8.88:8.99:9.03:8.96"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>793208</Value>
+        <RawString>785228:796409:797707:797755:798499:799779:798427:792588:774936:790747</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"12.49:12.47:12.31:12.29:12.29:12.28:12.26:12.28:12.36:12.62:12.39"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>tcp 1024</Arguments>
+    <Description>Type: TCP Socket - Message Bytes: 1024</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>1109997</Value>
+        <RawString>1087031:1123086:1121714:1111347:1121341:1103581:1115275:1122117:1069594:1124882</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"9.01:9.30:9.02:9.03:9.11:9.04:9.16:9.08:9.03:9.42:9.01"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>1032132</Value>
+        <RawString>1042488:1015920:1046254:1049152:1030709:1022752:1039733:1016058:1024833:1033422</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"9.64:9.64:9.88:9.61:9.59:9.75:9.81:9.67:9.87:9.79:9.72"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>728623</Value>
+        <RawString>724279:728517:726823:724459:730734:728743:724100:726260:734843:737476</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"13.31:13.44:13.36:13.39:13.43:13.33:13.36:13.44:13.40:13.26:13.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>tcp 2048</Arguments>
+    <Description>Type: TCP Socket - Message Bytes: 2048</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>889503</Value>
+        <RawString>876845:885611:890239:894169:886177:886688:893347:895150:895233:891570</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"11.08:11.27:11.17:11.12:11.07:11.17:11.16:11.08:11.06:11.06:11.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>852776</Value>
+        <RawString>861394:860089:844868:838562:858256:839482:861079:843054:857489:863482</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"11.51:11.46:11.47:11.66:11.74:11.50:11.73:11.46:11.68:11.51:11.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>624580</Value>
+        <RawString>631301:624014:622500:620674:622903:624494:619767:630801:619111:630237</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"15.37:15.27:15.43:15.47:15.51:15.46:15.42:15.53:15.28:15.55:15.29"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>tcp 4096</Arguments>
+    <Description>Type: TCP Socket - Message Bytes: 4096</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>615411</Value>
+        <RawString>587571:627985:623658:619920:602821:617762:609459:614816:622917:627205</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"15.68:16.33:15.34:15.44:15.53:15.94:15.58:15.78:15.65:15.46:15.36"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>608475</Value>
+        <RawString>606960:597514:606898:613739:614180:612245:614035:617028:605605:596546</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"15.82:15.84:16.07:15.84:15.67:15.66:15.71:15.67:15.60:15.87:16.10"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>470107</Value>
+        <RawString>459489:470435:471920:467798:461028:471447:471001:474496:471279:482172</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"20.27:20.60:20.14:20.08:20.25:20.53:20.10:20.12:19.98:20.11:19.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>pipe 128</Arguments>
+    <Description>Type: Unnamed Pipe - Message Bytes: 128</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>2033450</Value>
+        <RawString>1864678:2177958:2326200:1758854:1763137:1888372:1849683:2401786:2460742:1843089</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.27:4.84:4.14:3.88:5.13:5.11:4.77:4.87:3.76:3.67:4.89"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>2065603</Value>
+        <RawString>1959049:2169106:2088223:2407685:1636331:2112006:2219119:1707554:1863239:2493714</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.59:4.60:4.16:4.32:3.75:5.51:4.27:4.06:5.28:4.84:3.63"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>1970472</Value>
+        <RawString>2000614:2181316:1947876:1747781:1842905:2330020:1789162:2024843:1891535:1948667</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.18:4.51:4.14:4.63:5.16:4.89:3.87:5.05:4.45:4.77:4.63"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>pipe 256</Arguments>
+    <Description>Type: Unnamed Pipe - Message Bytes: 256</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>2128181</Value>
+        <RawString>2246933:2126785:2137386:2293844:1814750:2081739:2206230:2262944:2242270:1868929</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.03:4.01:4.24:4.22:3.93:4.97:4.33:4.09:3.99:4.02:4.82"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>2083552</Value>
+        <RawString>1873093:1845887:2335822:2153769:2185398:2320750:2198953:1929651:2149670:1842527</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"3.98:4.81:4.88:3.86:4.19:4.13:3.89:4.10:4.67:4.20:4.89"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>1795188</Value>
+        <RawString>1781902:1535511:1534462:2273527:1883480:1751583:1669832:1923091:1658897:1939599</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"5.22:5.07:5.87:5.87:3.97:4.79:5.15:5.40:4.69:5.43:4.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>pipe 512</Arguments>
+    <Description>Type: Unnamed Pipe - Message Bytes: 512</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>1873920</Value>
+        <RawString>1971326:1821292:1894767:1829364:1936145:1855767:1886637:1645565:1905896:1992436</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.62:4.57:4.95:4.76:4.93:4.66:4.86:4.78:5.48:4.73:4.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>1814444</Value>
+        <RawString>1608983:1892252:1623939:1657115:1992315:2007523:1829196:1802644:2060453:1670022</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"5.23:5.61:4.77:5.55:5.44:4.53:4.49:4.93:5.01:4.38:5.40"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>1927736</Value>
+        <RawString>2039639:1846666:1859779:2106400:1975748:1921049:1779154:2075971:1900366:1772589</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.53:4.42:4.88:4.85:4.28:4.56:4.69:5.07:4.34:4.75:5.09"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>pipe 1024</Arguments>
+    <Description>Type: Unnamed Pipe - Message Bytes: 1024</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>1243478</Value>
+        <RawString>1293781:1366303:1152596:1101501:1342890:1376788:1180297:1251093:1241887:1127646</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"6.99:6.97:6.60:7.82:8.18:6.71:6.55:7.63:7.20:7.26:7.99"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>1329981</Value>
+        <RawString>1438419:1295298:1339727:1503238:1421587:1365557:1107567:1300552:1237491:1290378</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"6.97:6.27:6.96:6.73:6.00:6.34:6.60:8.14:6.93:7.28:6.98"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>1374927</Value>
+        <RawString>1376054:1341739:1417622:1416184:1424795:1349589:1382504:1311499:1341476:1387806</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"6.97:6.55:6.72:6.36:6.36:6.33:6.68:6.52:6.87:6.73:6.49"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>pipe 2048</Arguments>
+    <Description>Type: Unnamed Pipe - Message Bytes: 2048</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>900910</Value>
+        <RawString>951766:916322:920337:930807:922100:889986:902690:817130:863250:894710</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"10.18:9.47:9.83:9.79:9.68:9.77:10.12:9.98:11.02:10.43:10.07"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>846557</Value>
+        <RawString>949979:789305:792256:767461:927873:915666:880834:744752:915340:782101</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"9.37:9.48:11.41:11.37:11.74:9.71:9.85:10.23:12.09:9.84:11.52"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>926901</Value>
+        <RawString>972140:871587:858675:808118:837476:979492:963654:980875:985020:1011971</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"10.91:9.27:10.34:10.49:11.15:10.76:9.21:9.35:9.19:9.15:8.90"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>pipe 4096</Arguments>
+    <Description>Type: Unnamed Pipe - Message Bytes: 4096</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>611616</Value>
+        <RawString>736067:630614:682152:513291:513780:509063:598953:517403:712163:702675</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"16.58:12.24:14.28:13.20:17.54:17.53:17.69:15.04:17.40:12.65:12.82"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>647466</Value>
+        <RawString>725430:541223:559017:722340:601316:768606:541567:740523:721808:552830</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"12.64:12.42:16.64:16.11:12.47:14.98:11.72:16.63:12.16:12.48:16.29"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>711517</Value>
+        <RawString>725655:710094:717799:743963:612293:583514:769424:748463:768697:735271</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"13.93:12.41:12.68:12.55:12.11:14.71:15.43:11.71:12.03:11.72:12.25"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>fifo 128</Arguments>
+    <Description>Type: FIFO Named Pipe - Message Bytes: 128</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>1921443</Value>
+        <RawString>1682730:1778765:1805959:1922761:1820146:2296095:2373683:1825265:2081992:1627034</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.98:5.36:5.07:4.99:4.69:4.95:3.93:3.80:4.94:4.33:5.54"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>1814310</Value>
+        <RawString>1815610:1806307:1806791:1856133:1827751:2121008:1869619:1841719:1562671:1635488</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.50:4.97:4.99:4.99:4.86:4.93:4.25:4.82:4.90:5.77:5.51"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>1805439</Value>
+        <RawString>1724007:1825191:1827433:1646799:2349021:1641780:1958450:1724461:1671134:1686116</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.72:5.23:4.94:4.93:5.47:3.84:5.49:4.60:5.23:5.39:5.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>fifo 256</Arguments>
+    <Description>Type: FIFO Named Pipe - Message Bytes: 256</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>1712046</Value>
+        <RawString>1836435:1791407:1793235:1636131:1901404:1621922:1678183:1761700:1604970:1495071</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"5.02:4.91:5.03:5.03:5.51:4.74:5.56:5.37:5.13:5.62:6.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>1819023</Value>
+        <RawString>2208264:1731130:1809939:1611153:1825789:1862569:1658032:2080466:1589417:1813469</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.93:4.08:5.22:4.98:5.60:4.94:4.84:5.44:4.34:5.67:4.97"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>1868350</Value>
+        <RawString>2021244:1656852:1748189:1831707:1776128:2053306:1709888:1622018:2287707:1976462</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.59:4.46:5.45:5.16:4.92:5.08:4.39:5.27:5.56:3.94:4.56"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>fifo 512</Arguments>
+    <Description>Type: FIFO Named Pipe - Message Bytes: 512</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>1811748</Value>
+        <RawString>1788917:1752255:1908784:1677838:1895297:1837647:1930773:1666880:1747824:1911268</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.98:5.04:5.15:4.72:5.37:4.76:4.91:4.67:5.41:5.16:4.72"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>1785156</Value>
+        <RawString>1686823:1527311:1823619:1708253:2009131:1760088:1720708:1895587:1932797:1787239</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.74:5.35:5.90:4.94:5.28:4.49:5.12:5.25:4.76:4.67:5.05"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>1751301</Value>
+        <RawString>1689617:1748429:1856680:1901432:1538689:1809763:1884542:1726722:1664695:1692436</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"4.87:5.34:5.16:4.86:4.74:5.86:4.98:4.79:5.22:5.42:5.33"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>fifo 1024</Arguments>
+    <Description>Type: FIFO Named Pipe - Message Bytes: 1024</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>1320591</Value>
+        <RawString>1215385:1362328:1316365:1415768:1328058:1423666:1317361:1387027:1030524:1409425</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"6.36:7.41:6.62:6.85:6.37:6.79:6.33:6.84:6.50:8.74:6.39"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>1355800</Value>
+        <RawString>1381060:1316180:1427213:1149602:1239129:1366736:1497486:1354227:1428570:1397799</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"6.50:6.53:6.85:6.32:7.84:7.27:6.59:6.02:6.66:6.31:6.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>1270653</Value>
+        <RawString>1076081:1247957:1325322:1239783:1246564:1389309:1318754:1296465:1369539:1196756</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"7.16:8.37:7.22:6.80:7.27:7.23:6.49:6.83:6.95:6.59:7.53"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>fifo 2048</Arguments>
+    <Description>Type: FIFO Named Pipe - Message Bytes: 2048</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>937003</Value>
+        <RawString>950630:942703:878035:955468:935368:957262:1000572:957855:847223:944912</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"10.35:9.48:9.56:10.26:9.43:9.63:9.41:9.00:9.41:10.63:9.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>903518</Value>
+        <RawString>887837:875567:844487:891432:954725:896418:902518:916394:929383:936417</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"9.24:10.15:10.29:10.67:10.11:9.44:10.05:9.98:9.83:9.69:9.62"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>990789</Value>
+        <RawString>986877:994129:966303:895743:999237:973488:1058754:999089:1064143:970131</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"9.10:9.13:9.06:9.32:10.06:9.02:9.25:8.52:9.02:8.47:9.29"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>fifo 4096</Arguments>
+    <Description>Type: FIFO Named Pipe - Message Bytes: 4096</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>727872</Value>
+        <RawString>740522:720310:742674:773025:575884:738341:739457:736522:784220:727769</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"12.28:12.16:12.50:12.13:11.65:15.64:12.20:12.18:12.23:11.49:12.38"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>740991</Value>
+        <RawString>761054:657440:768183:742798:757887:765411:726330:698658:757694:774452</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"15.97:11.84:13.70:11.73:12.13:11.88:11.77:12.40:12.89:11.89:11.63"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>763553</Value>
+        <RawString>723802:800373:760933:775393:749831:752098:776144:753889:752869:790194</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"11.84:12.44:11.25:11.84:11.62:12.01:11.98:11.61:11.95:11.96:11.40"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>socketpair 128</Arguments>
+    <Description>Type: Unnamed Unix Domain Socket - Message Bytes: 128</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>826266</Value>
+        <RawString>837476:844041:864825:808650:803194:803910:846211:802405:825239:826709</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"10.73:10.76:10.67:10.42:11.14:11.21:11.20:10.64:11.23:10.92:10.90"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>740880</Value>
+        <RawString>769222:770747:708770:707067:709058:726870:765963:748666:779360:723078</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"12.43:11.71:11.69:12.71:12.74:12.70:12.39:11.76:12.03:11.56:12.46"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>735862</Value>
+        <RawString>779541:727467:717205:722482:718380:735796:719812:733718:719355:784867</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"11.56:11.55:12.38:12.56:12.47:12.54:12.24:12.51:12.28:12.52:11.48"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>socketpair 256</Arguments>
+    <Description>Type: Unnamed Unix Domain Socket - Message Bytes: 256</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>797713</Value>
+        <RawString>787188:790604:781724:811899:796946:797196:808445:799198:797535:806395</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"11.07:11.44:11.39:11.52:11.09:11.30:11.30:11.14:11.27:11.29:11.17"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>718927</Value>
+        <RawString>731649:709680:733618:703355:710314:712341:727426:720591:730959:709335</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"12.11:12.31:12.69:12.28:12.81:12.68:12.64:12.38:12.50:12.32:12.70"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>691825</Value>
+        <RawString>697040:698933:695034:694643:702485:711504:700211:656550:677349:684504</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"13.18:12.92:12.89:12.96:12.97:12.82:12.66:12.86:13.72:13.30:13.16"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>socketpair 512</Arguments>
+    <Description>Type: Unnamed Unix Domain Socket - Message Bytes: 512</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>801678</Value>
+        <RawString>790140:802642:798429:790785:814716:782956:802836:800132:804385:829758</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"11.36:11.40:11.22:11.28:11.39:11.06:11.50:11.22:11.26:11.20:10.86"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>717489</Value>
+        <RawString>725364:725232:725939:722031:706743:710590:714832:707966:725605:710583</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"12.77:12.42:12.42:12.41:12.47:12.74:12.67:12.60:12.72:12.41:12.67"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>668390</Value>
+        <RawString>692224:711589:665810:670859:663717:649189:656875:659336:657999:656298</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"13.34:13.01:12.66:13.53:13.42:13.57:13.87:13.71:13.66:13.69:13.72"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>socketpair 1024</Arguments>
+    <Description>Type: Unnamed Unix Domain Socket - Message Bytes: 1024</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>703674</Value>
+        <RawString>708792:714897:698799:702171:698077:698289:698301:701642:702178:713593</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"12.55:12.71:12.60:12.89:12.83:12.90:12.90:12.90:12.84:12.83:12.62"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>656433</Value>
+        <RawString>657011:658556:651327:654754:657215:653490:655130:660342:654547:661962</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"13.58:13.71:13.68:13.83:13.75:13.70:13.78:13.75:13.64:13.76:13.61"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>642667</Value>
+        <RawString>638358:641591:640892:640025:646957:639724:632206:643654:660459:642808</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"13.88:14.11:14.04:14.05:14.07:13.92:14.08:14.25:13.99:13.64:14.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>socketpair 2048</Arguments>
+    <Description>Type: Unnamed Unix Domain Socket - Message Bytes: 2048</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>562966</Value>
+        <RawString>574998:577713:560239:568183:555842:560343:562379:558356:553199:558409</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"15.62:15.66:15.59:16.07:15.85:16.20:16.07:16.01:16.13:16.28:16.13"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>528389</Value>
+        <RawString>537873:536148:536665:522744:514358:540414:538242:520994:517174:519275</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"16.75:16.74:16.80:16.78:17.23:17.51:16.66:16.73:17.28:17.41:17.34"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>536251</Value>
+        <RawString>542602:545016:544142:531811:526650:536076:544562:533711:530893:527043</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"16.65:16.60:16.52:16.55:16.93:17.10:16.80:16.54:16.87:16.96:17.09"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ipc-benchmark-1.0.0</Identifier>
+    <Title>IPC_benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments>socketpair 4096</Arguments>
+    <Description>Type: Unnamed Unix Domain Socket - Message Bytes: 4096</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>bpfcontain-passive</Identifier>
+        <Value>546047</Value>
+        <RawString>569006:548853:542645:544352:548047:534918:532675:566238:543952:529785</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"16.04:15.83:16.41:16.59:16.54:16.43:16.83:16.90:15.90:16.55:17.00"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-allow</Identifier>
+        <Value>516404</Value>
+        <RawString>522008:504303:498138:521622:524719:519277:518707:516266:518958:520045</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"17.38:17.25:17.86:18.08:17.26:17.16:17.34:17.36:17.44:17.35:17.32"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>bpfcontain-complaining</Identifier>
+        <Value>522219</Value>
+        <RawString>518823:524067:519298:522032:520593:521750:524235:520507:529034:521853</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""},"test-run-times":"17.17:17.36:17.18:17.34:17.25:17.30:17.26:17.18:17.30:17.02:17.26"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
