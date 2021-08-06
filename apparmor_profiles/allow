@@ -1,3 +1,5 @@
+abi <abi/3.0>,
+
 profile ALLOW {
     # Allow all rules
     capability,
