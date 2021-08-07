@@ -1,1 +1,0 @@
-BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=b963aa9a-d349-4128-9853-944db48c1a95 rw loglevel=3 quiet nowatchdog ec_sys.write_support=1 resume=/dev/nvme0n1p3 acpi_os_name=Linux acpi_osi= lsm=lockdown,yama,bpf

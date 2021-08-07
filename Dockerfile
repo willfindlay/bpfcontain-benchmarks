@@ -30,8 +30,8 @@ ENV PATH $PATH:/home/bench/.cargo/bin
 RUN pts install $PTS_TESTS
 
 # Install BPFContain
-ARG CACHE_DATE=2021-08-06
-RUN git clone https://github.com/willfindlay/bpfcontain-rs /tmp/bpfcontain-rs && cd /tmp/bpfcontain-rs && cargo install --path .
+ARG CACHE_DATE=2021-08-06.1
+RUN git clone --branch=benches https://github.com/willfindlay/bpfcontain-rs /tmp/bpfcontain-rs && cd /tmp/bpfcontain-rs && cargo install --path .
 
 # Install BPFBox
 ARG CACHE_DATE=2021-08-05
