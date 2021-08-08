@@ -1,37 +1,11 @@
 name: allow
 
-# Spawn untainted so we allow everything
+# Spawn untainted and privileged so we allow everything
 defaultTaint: false
+privileged: true
+# Complain just in case something slips through the cracks
 complain: true
 
 allow:
-  - capability:
-    - chown
-    - fowner
-    - fsetid
-    - kill
-    - lease
-    - linuximmutable
-    - netadmin
-    - netbindservice
-    - netbroadcast
-    - netraw
-    - setpcap
-    - syschroot
-    - sysptrace
-    - sysrawio
-    - sysresource
-    - systime
-    - systtyconfig
-    - syslog
-    - wakealarm
-    - sysadmin
-    - dacoverride
-    - dacreadsearch
-    - setuid
-    - setgid
-
+  - capability: any
   - net: any
-  - dev: terminal
-  - dev: null
-  - dev: random
